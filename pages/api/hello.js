@@ -1,5 +1,13 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import { withOGImage } from "next-api-og-image";
 
-export default function handler(req, res) {
-  res.status(200).json({ name: 'John Doe' })
-}
+import Home from "/src/components/chadfernandez-me/Home";
+
+export default withOGImage({
+  template: {
+    react: ({ myQueryParam }) => (
+      <>
+        <Home />
+      </>
+    ),
+  },
+});
