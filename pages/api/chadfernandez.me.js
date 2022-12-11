@@ -5,7 +5,7 @@ import Home from "/src/components/chadfernandez-me/Home";
 
 export default withOGImage({
   template: {
-    react: ({ myQueryParam }) => (
+    react: () => (
       <Frame>
         <Home />
       </Frame>
